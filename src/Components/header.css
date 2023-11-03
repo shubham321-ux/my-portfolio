@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+}
+.mainHeader{
+    background-color: aquamarine;
+    width:100%;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainHeader{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.items{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    cursor: pointer;
+}
+.items a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.items a:hover{
+    opacity: 0.9;
+    scale: 1.1;
+    border-bottom: 1px solid black;
+}
+.menuLogo{
+    visibility: hidden;
+    width:50px;
+    height:50px;
+    position: absolute;
+    right:3px;
+   
+    background-color: aquamarine;
+    
+}
+#sidediv{
+    color:black;
+  width:50vw;
+  height:60vh;
+  background-color:red ;
+  position: absolute;
+  top:50px;
+  right:-100px;
+  z-index: 1;
+  border-radius: 10px;
+ visibility: hidden;
+  animation: 2s ;
+}
+@keyframes side {
+    to{
+        right:-50px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .mainHeader{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .items{
+        visibility:visible;
+    }
+    .items a{
+        font-size: 2.2vw;
+    }
+    .menuLogo{
+        visibility: visible;
+        margin-right: 10px;
+       
+    }
+    #sidediv{
+        visibility: hidden;
+    }
+    
+}

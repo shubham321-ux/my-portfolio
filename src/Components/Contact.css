@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+}
+.infu{
+    width: 100%;
+    height:calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.maininfu{
+    width:40vw;
+    height:50vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@media only screen and (max-width: 768px){
+    .infu{
+        height:50vh;
+    }
+}
